@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Work sans','Times New Roman', Times, serif;
+}
+    body {
+        font-family: 'Work sans','Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: bolder;
+        text-align: justify;
+        background-image: linear-gradient(to right, #F2E638, #F2DD72);
+    }
+
+    header {
+        margin: 20px;
+    }
+
+    div {
+        background-color: white;
+        width: 300px;
+        border-radius: 6px;
+        text-align: center;
+        box-shadow: 5px 5px 15px #6d5202bb;
+    }
+
+    div > p {
+        display: none;
+    }
+
+    div:hover > p {
+        display: block;
+        color: rgba(0, 0, 0, 0.973);
+        background-color: white;
+        border-radius: 6px;
+        width: 300px;
+    }
+
+    main {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px #6d5202bb;
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+    }
+    h1 {
+        font-family: 'Kaushan script';
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    h1.especial {
+        text-align: left;
+        font-size: 2em;
+    }
+
+    a:hover {
+        color: rgb(202, 202, 99);
+        text-decoration: none;
+    }
+
+    a:active {
+        color: rgb(96, 81, 150);
+    }
