@@ -35,6 +35,7 @@ header>img{
 header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
 }
 
 nav>a {
@@ -154,6 +155,33 @@ h2 {
     background-color: var(--color-secondary);
 }
 
+/*Rodapé*/
+
+footer {
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer>div>nav>a{
+    display: block;
+    padding-left: 0;
+}
+
+.newsletter-form>label{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.newsletter-form>input{
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+/*Classes utilitárias*/
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -181,4 +209,78 @@ h2 {
 
 .text-center {
     text-align: center;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 40rem ){
+    header>div>nav {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card:nth-child(2n){
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    header>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img,
+    header nav,
+    header .button{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 72rem) {
+    h1,h2{
+        font-size: 4rem;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+
+    }
+
+    .container.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-column{
+        flex: 2;
+    }
+
+    .about-column p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+
+    .newsletter-form {
+        flex: 3;
+    }
+}
+
+@media screen and (min-width: 80rem){
+    .container {
+        max-width: 80rem;
+    }
 }
